@@ -1,21 +1,19 @@
-# Default starter for Gridsome
+# blugento leaderboard
 
-This is the project you get when you run `gridsome create new-project`.
+Leaderboard to motivate users to use https://app.blugento.com
 
-### 1. Install Gridsome CLI tool if you don't have
+## 0. Preparation
 
-`npm install --global @gridsome/cli`
+1. Checkout the repository `yarn global add @gridsome/cli`
 
-### 2. Create a Gridsome project
+## 1. Installation
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+1. Checkout the repository `git clone https://github.com/vergissberlin/blugento-leaderboard.git`
+2. Change into directory `cd blugento-leaderboard`
+3. Install dependencies `yarn install`
+4. Start the application `gridsome develop`
+5. Happy coding 🎉🙌
 
-### 3. Deploy
+## 2. Deploy
 
-```bash
-gridsome build
-surge --domain blugentoleaderboard.surge.sh dist/
-```
+1. Run the deploy task `gridsome deploy`
