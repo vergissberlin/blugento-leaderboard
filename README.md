@@ -16,4 +16,4 @@ Leaderboard to motivate users to use https://app.blugento.com
 
 ## 2. Deploy
 
-1. Run the deploy task `gridsome deploy`
+1. Run the deploy task `gridsome deploy`.
