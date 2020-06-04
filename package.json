@@ -1,0 +1,19 @@
+{
+  "name": "blugento-leaderboard",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "deploy": "gridsome build && surge --domain blugentoleaderboard.surge.sh dist/"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "gridsome-plugin-manifest": "^0.3.4",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
+  }
+}
