@@ -21,7 +21,8 @@ before_deploy:
 
 deploy:
   provider: surge
-  project: /home/travis/build/vergissberlin/blugento-leaderboard/dist/
+  project: ./dist/
   domain: blugentoleaderboard.surge.sh
+  skip_cleanup: true
   on:
     branch: master
