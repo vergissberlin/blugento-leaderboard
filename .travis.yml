@@ -21,7 +21,7 @@ before_deploy:
 
 deploy:
   provider: surge
-  project: ./dist/
+  project: /home/travis/build/vergissberlin/blugento-leaderboard/dist/
   domain: blugentoleaderboard.surge.sh
   on:
     branch: master
