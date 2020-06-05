@@ -16,8 +16,7 @@ script:
   - yarn build
 
 before_deploy:
-  - pwd
-  - ls -lisah
+  - ls -lisah ./dist
 
 deploy:
   provider: surge
