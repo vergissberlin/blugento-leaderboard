@@ -1,0 +1,33 @@
+
+.leaderboard {
+	height: 100%;
+	counter-reset: leaderboard-counter;
+
+	dt {
+		position: relative;
+		padding-left: 40px;
+		margin-bottom: 10px;
+
+		&:before {
+			content: counter(leaderboard-counter);
+			counter-increment: leaderboard-counter;
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-size: 1.3em;
+			line-height: 0.8;
+			font-weight: 400;
+			color: rgba(0, 0, 0, 0.8);
+		}
+	}
+
+	dd {
+		display: flex;
+		margin-bottom: 40px;
+		justify-content: space-between;
+	}
+
+	&-value {
+		font-weight: 700;
+	}
+}

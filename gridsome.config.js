@@ -10,6 +10,12 @@ module.exports = {
 	siteUrl: 'https://blugentoleaderboard.surge.sh',
 	plugins: [
 		{
+			use: 'gridsome-plugin-brotli'
+		},
+		{
+			use: 'gridsome-plugin-typescript'
+		},
+		{
 			use: 'gridsome-plugin-manifest',
 			options: {
 				background_color: '#006eb8',
