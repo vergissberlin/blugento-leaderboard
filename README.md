@@ -8,6 +8,8 @@ Leaderboard to motivate users to use <https://app.blugento.com>.
 
 ## 1. Installation
 
+[![Build Status](https://travis-ci.org/vergissberlin/blugento-leaderboard.svg?branch=master)](https://travis-ci.org/vergissberlin/blugento-leaderboard)
+
 1. Checkout the repository `git clone https://github.com/vergissberlin/blugento-leaderboard.git`.
 2. Change into directory `cd blugento-leaderboard`.
 3. Install dependencies `yarn install`.
