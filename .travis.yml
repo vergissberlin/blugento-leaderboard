@@ -16,6 +16,7 @@ script:
   - yarn build
 
 before_deploy:
+  - pwd
   - ls -lisah
 
 deploy:
