@@ -15,6 +15,9 @@ cache: yarn
 script:
   - yarn build
 
+before_deploy:
+  - ls -lisah
+
 deploy:
   provider: surge
   project: ./dist/
