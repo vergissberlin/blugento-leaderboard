@@ -45,7 +45,7 @@
 				<section class="card-details card-section">
 					<nav class="menu">
 						<article class="menu-item menu-item-active">
-							<g-image src="~/assets/img/blugento-logo.png" width="142" alt="blugento logo" />
+							<g-image src="~/assets/img/blugento-logo.png" width="142" alt="blugento logo" quality="90" />
 						</article>
 					</nav>
 
