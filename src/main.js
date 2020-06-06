@@ -7,4 +7,10 @@ import '~/assets/styles.scss'
 export default function(Vue, { router, head, isClient }) {
 	// Set default layout as a global component
 	Vue.component('Layout', DefaultLayout)
+
+	// Keywords
+	head.meta.push({
+		name: 'keywords',
+		content: 'blugento,leader'
+	})
 }

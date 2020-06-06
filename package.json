@@ -8,6 +8,7 @@
     "deploy": "gridsome build && surge --domain blugentoleaderboard.surge.sh dist/"
   },
   "dependencies": {
+    "@gridsome/plugin-critical": "^0.1.6",
     "axios": "^0.19.2",
     "crypto-js": "^4.0.0",
     "gridsome": "^0.7.0",

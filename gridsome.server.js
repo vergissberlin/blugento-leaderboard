@@ -8,6 +8,7 @@ const axios = require('axios')
 module.exports = function (api) {
   // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
   api.loadSource(async actions => {
+
     const { data } = await axios({
       method: 'get',
       url: `${process.env.SEGMENTS_LIST}`,
@@ -15,6 +16,7 @@ module.exports = function (api) {
         'autopilotapikey': process.env.AUTOPILOT_KEY
       } 
     })
+
     const collection = actions.addCollection({
       typeName: 'Users'
     })
@@ -32,5 +34,12 @@ module.exports = function (api) {
 
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
+  })
+
+  // API
+  api.configureServer(app => {
+    app.get('/leader', (req, res) => {
+      res.send('Hello, world!')
+    })
   })
 }
