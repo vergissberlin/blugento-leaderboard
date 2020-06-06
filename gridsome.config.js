@@ -16,6 +16,16 @@ module.exports = {
 			use: 'gridsome-plugin-typescript'
 		},
 		{
+			use: 'gridsome-plugin-service-worker',
+			options: {
+				networkFirst: {
+					precachedRoutes: ['/'],
+					cacheName: 'lb-v1',
+					routes: ['/', /\.(js|css|png)$/]
+				}
+			}
+		},
+		{
 			use: '@gridsome/plugin-critical',
 			options: {
 				paths: ['/'],

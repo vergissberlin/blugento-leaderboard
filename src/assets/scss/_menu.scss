@@ -1,0 +1,24 @@
+.menu {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: $margin;
+	&-item {
+		font-size: 1.6em;
+		font-weight: 400;
+		padding: 20px 40px;
+		color: rgba(0, 0, 0, 0.3);
+		min-width: 50%;
+
+		&:not(:last-child) {
+			box-shadow: 25px 0px 0 -24px rgba(0, 0, 0, 0.2);
+		}
+
+		&:last-child {
+			text-align: right;
+		}
+
+		&-active {
+			color: tint($accent, 20%);
+		}
+	}
+}

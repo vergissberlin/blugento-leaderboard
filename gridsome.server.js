@@ -5,41 +5,42 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 const axios = require('axios')
-module.exports = function (api) {
-  // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  api.loadSource(async actions => {
+module.exports = function(api) {
+	// Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+	api.loadSource(async (actions) => {
+		const { data } = await axios({
+			method: 'get',
+			url: `${process.env.SEGMENTS_LIST}`,
+			headers: {
+				autopilotapikey: process.env.AUTOPILOT_KEY
+			}
+		})
 
-    const { data } = await axios({
-      method: 'get',
-      url: `${process.env.SEGMENTS_LIST}`,
-      headers: {
-        'autopilotapikey': process.env.AUTOPILOT_KEY
-      } 
-    })
+		const collection = actions.addCollection({
+			typeName: 'Users'
+		})
 
-    const collection = actions.addCollection({
-      typeName: 'Users'
-    })
-
-    for (const item of data.contacts) {
-      collection.addNode({
-        id: item.contact_id,
-        name: item.Name,
-        firstName: item.FirstName,
+		for (const item of data.contacts) {
+			collection.addNode({
+				id: item.contact_id,
+				name: item.Name,
+				firstName: item.FirstName,
+				lastName: item.LastName,
+				salutation: item.Salutation,
 				email: item.Email,
-				custom_fields: item.custom_fields
-      })
-    }
-  })
+				scores: item.custom_fields.find((x) => x.kind === 'beta - scores').value
+			})
+		}
+	})
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
+	api.createPages(({ createPage }) => {
+		// Use the Pages API here: https://gridsome.org/docs/pages-api/
+	})
 
-  // API
-  api.configureServer(app => {
-    app.get('/leader', (req, res) => {
-      res.send('Hello, world!')
-    })
-  })
+	// API
+	api.configureServer((app) => {
+		app.get('/leader', (req, res) => {
+			res.send('Hello, world!')
+		})
+	})
 }

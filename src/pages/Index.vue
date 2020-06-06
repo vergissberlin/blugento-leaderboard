@@ -45,19 +45,20 @@
 				<section class="card-details card-section">
 					<nav class="menu">
 						<article class="menu-item menu-item-active">
-							<g-image src="~/assets/img/blugento-logo.jpg" width="142" alt="blugento logo" quality="90" />
+							<g-image src="~/assets/img/blugento-logo.jpg" width="144" alt="blugento logo" quality="92" />
 						</article>
 					</nav>
 
 					<dl class="leaderboard">
 						<template v-for="user in leaders">
 							<dt>
-								<article class="progress">
-									<section class="progress-bar"></section>
+								<article class="progress" :title="`${procent(user.node.scores)}% of ${totalScores} scores.`">
+									<section class="progress-bar" :style="`width: ${procent(user.node.scores)}%`"></section>
 								</article>
 							</dt>
 							<dd>
-								<div class="leaderboard-name">{{ user.node.firstName }}</div>
+								<div class="leaderboard-name">{{ user.node.firstName }} {{ user.node.lastName | shorten }}</div>
+								<div class="leaderboard-value" :title="`Level ${level(user.node.scores)}`">{{ user.node.scores }}</div>
 							</dd>
 						</template>
 					</dl>
@@ -69,12 +70,16 @@
 
 <page-query>
 query {
-  allUsers {
+  allUsers(sortBy: "scores", order: DESC) {
     edges {
       node {
-          id
-          firstName
-		  email          
+        id
+        name
+        salutation
+        firstName
+		lastName
+        email
+        scores
       }
     }
   }
@@ -88,10 +93,14 @@ export default {
 	},
 	computed: {
 		leaders() {
-			return this.$page.allUsers.edges.sort((a, b) => a.node.firstName - b.node.firstName).slice(0, 5)
+			return this.$page.allUsers.edges.slice(0, 5)
 		},
 		totalScores() {
-			return this.users.reduce((a, b) => ({ scores: a.scores + b.scores })).scores
+			let total = 0
+			this.$page.allUsers.edges.forEach((element) => {
+				total += parseInt(element.node.scores)
+			})
+			return total
 		},
 		leader() {
 			return this.leaders[0]
