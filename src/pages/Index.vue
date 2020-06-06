@@ -3,7 +3,7 @@
 		<div id="leaderboard">
 			<div class="card">
 				<section class="card-info card-section">
-					<div class="avatar row" :style="'background-image: url(' + gravatar(leader.email) + ')'"></div>
+					<div class="avatar row" :style="'background-image: url()'"></div>
 
 					<section class="user row">
 						<h1 class="user-header">
@@ -81,7 +81,6 @@ query {
 }
 </page-query>
 <script>
-import MD5 from 'crypto-js/md5'
 export default {
 	metaInfo: {
 		title: 'overview'
@@ -100,9 +99,6 @@ export default {
 	methods: {
 		moo: function(name) {
 			return `The name ${name}`
-		},
-		gravatar: (email, size = 200) => {
-			return `https://www.gravatar.com/avatar/${MD5(email)}?s=${size}&d=robohash&r=x`
 		},
 		procent: function(scores) {
 			return Math.round((100 / this.totalScores) * scores)
