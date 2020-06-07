@@ -5,6 +5,12 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 const axios = require('axios')
+const MD5 = require('crypto-js/md5')
+
+function gravatar(email, size = 200) {
+	return `https://www.gravatar.com/avatar/${MD5(email)}?s=${size}&d=robohash&r=x`
+}
+
 module.exports = function(api) {
 	// Use the Data Store API here: https://gridsome.org/docs/data-store-api/
 	api.loadSource(async (actions) => {
@@ -27,7 +33,7 @@ module.exports = function(api) {
 				firstName: item.FirstName,
 				lastName: item.LastName,
 				salutation: item.Salutation,
-				email: item.Email,
+				gravatar: gravatar(item.Email),
 				scores: item.custom_fields.find((x) => x.kind === 'beta - scores').value
 			})
 		}

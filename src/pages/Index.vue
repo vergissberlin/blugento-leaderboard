@@ -3,12 +3,12 @@
 		<div id="leaderboard">
 			<div class="card">
 				<section class="card-info card-section">
-					<div class="avatar row" :style="'background-image: url(' + gravatar(leader.email) + ')'"></div>
+					<div class="avatar row" :style="'background-image: url(' + leader.node.gravatar + ')'"></div>
 
 					<section class="user row">
 						<h1 class="user-header">
 							{{ leader.node.firstName }}
-							<h2 class="sub header">{{ leader.scores }} logins</h2>
+							<h2 class="sub header">{{ leader.node.scores }} logins</h2>
 						</h1>
 					</section>
 
@@ -27,14 +27,14 @@
 								Score
 							</h4>
 							<h3 class="statistic-value">
-								{{ leader.scores }}
+								{{ leader.node.scores }}
 							</h3>
 						</article>
 					</section>
 
 					<div class="dial">
 						<h2 class="dial-title">
-							{{ level(leader.scores) }}
+							{{ level(leader.node.scores) }}
 						</h2>
 						<h3 class="dial-value">
 							Level
@@ -78,7 +78,7 @@ query {
         salutation
         firstName
 		lastName
-        email
+        gravatar
         scores
       }
     }
@@ -86,7 +86,6 @@ query {
 }
 </page-query>
 <script>
-import MD5 from 'crypto-js/md5'
 export default {
 	metaInfo: {
 		title: 'overview'
@@ -109,9 +108,6 @@ export default {
 	methods: {
 		moo: function(name) {
 			return `The name ${name}`
-		},
-		gravatar: (email, size = 200) => {
-			return `https://www.gravatar.com/avatar/${MD5(email)}?s=${size}&d=robohash&r=x`
 		},
 		procent: function(scores) {
 			return Math.round((100 / this.totalScores) * scores)
