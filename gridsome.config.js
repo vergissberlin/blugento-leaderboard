@@ -26,14 +26,6 @@ module.exports = {
 			}
 		},
 		{
-			use: '@gridsome/plugin-critical',
-			options: {
-				paths: ['/'],
-				width: 1300,
-				height: 900
-			}
-		},
-		{
 			use: 'gridsome-plugin-manifest',
 			options: {
 				background_color: '#006eb8',
