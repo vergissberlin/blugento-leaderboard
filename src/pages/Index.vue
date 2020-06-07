@@ -70,7 +70,7 @@
 
 <page-query>
 query {
-  allUsers(sortBy: "scores", order: DESC) {
+  allUsers(sortBy: "scores", order: DESC, limit: 5) {
     edges {
       node {
         id
