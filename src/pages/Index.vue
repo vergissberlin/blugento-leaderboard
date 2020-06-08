@@ -50,14 +50,14 @@
 					</nav>
 
 					<dl class="leaderboard">
-						<template v-for="user in leaders">
+						<template v-for="user in $page.allUsers.edges">
 							<dt>
 								<article class="progress" :title="`${procent(user.node.scores)}% of ${totalScores} scores.`">
 									<section class="progress-bar" :style="`width: ${procent(user.node.scores)}%`"></section>
 								</article>
 							</dt>
 							<dd>
-								<div class="leaderboard-name">{{ user.node.firstName }} {{ user.node.lastName | shorten }}</div>
+								<div class="leaderboard-name">{{ user.node.firstName }} {{ user.node.lastName }}</div>
 								<div class="leaderboard-value" :title="`Level ${level(user.node.scores)}`">{{ user.node.scores }}</div>
 							</dd>
 						</template>
@@ -73,9 +73,6 @@ query {
   allUsers(sortBy: "scores", order: DESC, limit: 5) {
     edges {
       node {
-        id
-        name
-        salutation
         firstName
 		lastName
         gravatar
@@ -91,9 +88,6 @@ export default {
 		title: 'overview'
 	},
 	computed: {
-		leaders() {
-			return this.$page.allUsers.edges.slice(0, 5)
-		},
 		totalScores() {
 			let total = 0
 			this.$page.allUsers.edges.forEach((element) => {
@@ -102,7 +96,7 @@ export default {
 			return total
 		},
 		leader() {
-			return this.leaders[0]
+			return this.$page.allUsers.edges[0]
 		}
 	},
 	methods: {

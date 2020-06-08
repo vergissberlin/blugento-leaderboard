@@ -11,6 +11,12 @@ function gravatar(email, size = 200) {
 	return `https://www.gravatar.com/avatar/${MD5(email)}?s=${size}&d=robohash&r=x`
 }
 
+function shorten(value) {
+	if (!value) return ''
+	value = value.toString()
+	return `${value.charAt(0)}.`
+}
+
 module.exports = function(api) {
 	// Use the Data Store API here: https://gridsome.org/docs/data-store-api/
 	api.loadSource(async (actions) => {
@@ -29,9 +35,8 @@ module.exports = function(api) {
 		for (const item of data.contacts) {
 			collection.addNode({
 				id: item.contact_id,
-				name: item.Name,
 				firstName: item.FirstName,
-				lastName: item.LastName,
+				lastName: shorten(item.LastName),
 				salutation: item.Salutation,
 				gravatar: gravatar(item.Email),
 				scores: item.custom_fields.find((x) => x.kind === 'beta - scores').value

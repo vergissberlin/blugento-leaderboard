@@ -5,11 +5,6 @@ import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/styles.scss'
 
 export default function(Vue, { router, head, isClient }) {
-	Vue.filter('shorten', function(value) {
-		if (!value) return ''
-		value = value.toString()
-		return `${value.charAt(0)}.`
-	})
 
 	// Set default layout as a global component
 	Vue.component('Layout', DefaultLayout)
