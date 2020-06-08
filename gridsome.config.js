@@ -41,7 +41,7 @@ module.exports = {
 				background_color: '#006eb8',
 				icon_path: './src/assets/img/touchicon.png',
 				name: 'blugento leaderboard',
-				short_name: 'leader',
+				short_name: 'leaderboard',
 				display: 'standalone',
 				theme_color: '#f18626',
 				start_url: '/index.html',
