@@ -16,36 +16,38 @@ export default function(Vue, { router, head, isClient }) {
 	})
 
 	// OpenGraph
+	// @see https://opengraphcheck.com/result.php?url=https%3A%2F%2Fblugento-leaderboard.netlify.app%2F#.Xt6j52ozY9g
 	head.meta.push({
-		name: 'og:title',
+		property: 'og:title',
 		content: appConfig.name
 	})
 	head.meta.push({
-		name: 'og:description',
+		property: 'og:description',
 		content: appConfig.meta.description
 	})
 	head.meta.push({
-		name: 'og:type',
+		property: 'og:type',
 		content: 'article'
 	})
 	head.meta.push({
-		name: 'og:image:secure_url',
+		property: 'og:image:secure_url',
 		content: `https://blugento-leaderboard.netlify.app/assets/img/opengraph.jpg`
 	})
 	head.meta.push({
-		name: 'og:image:alt',
+		property: 'og:image:alt',
 		content: appConfig.meta.description
 	})
 	head.meta.push({
-		name: 'og:image:width',
+		property: 'og:image:width',
 		content: '1200'
 	})
 	head.meta.push({
-		name: 'og:image:height',
+		property: 'og:image:height',
 		content: '630'
 	})
 
 	// Twitter
+	// @see https://cards-dev.twitter.com/validator
 	head.meta.push({
 		name: 'twitter:card',
 		content: 'summary_large_image'
