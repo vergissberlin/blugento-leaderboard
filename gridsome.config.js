@@ -42,7 +42,7 @@ module.exports = {
 				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
 				themeColor: appConfig.colour.primary,
 				backgroundColor: appConfig.colour.primary,
-				icon: appConfig.icon.fav,
+				icon: appConfig.icon.touch,
 				icon_path: appConfig.icon.touch,
 				lang: 'en'
 			}
