@@ -5,7 +5,8 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "deploy": "gridsome build && surge --domain blugentoleaderboard.surge.sh dist/"
+    "deploy": "gridsome build && surge --domain blugentoleaderboard.surge.sh dist/",
+    "test:performance": "artillery run artillery.yml"
   },
   "dependencies": {
     "axios": "^0.19.2",

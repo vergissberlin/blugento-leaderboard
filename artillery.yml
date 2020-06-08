@@ -1,0 +1,12 @@
+config:
+  target: 'https://blugento-leaderboard.netlify.app/'
+  phases:
+    - duration: 60
+      arrivalRate: 20
+  defaults:
+    headers:
+      x-test: 'performance'
+scenarios:
+  - flow:
+      - get:
+          url: '/'
