@@ -7,7 +7,17 @@
 module.exports = {
 	siteName: 'blugento leaderboard',
 	siteDescription: 'leaderboard for winners!',
-	siteUrl: 'https://blugentoleaderboard.surge.sh',
+	siteUrl: 'https://blugento-leaderboard.netlify.app/surge.sh',
+	icon: {
+		favicon: './src/assets/img/favicon.png',
+		touchicon: './src/assets/img/touchicon.png'
+	},
+	transformers: {
+		remark: {
+			externalLinksTarget: '_blank',
+			externalLinksRel: ['nofollow', 'noindex', 'noopener', 'noreferrer']
+		}
+	},
 	plugins: [
 		{
 			use: 'gridsome-plugin-brotli'
@@ -29,7 +39,7 @@ module.exports = {
 			use: 'gridsome-plugin-manifest',
 			options: {
 				background_color: '#006eb8',
-				icon_path: './src/assets/img/trophy.jpg',
+				icon_path: './src/assets/img/blugento-touch.png',
 				name: 'blugento leaderboard',
 				short_name: 'leader',
 				display: 'standalone',
