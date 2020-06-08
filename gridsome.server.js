@@ -34,10 +34,7 @@ module.exports = function(api) {
 
 		for (const item of data.contacts) {
 			collection.addNode({
-				id: item.contact_id,
-				firstName: item.FirstName,
-				lastName: shorten(item.LastName),
-				salutation: item.Salutation,
+				name: `${item.FirstName} ${shorten(item.LastName)}`,
 				gravatar: gravatar(item.Email),
 				scores: item.custom_fields.find((x) => x.kind === 'beta - scores').value
 			})
