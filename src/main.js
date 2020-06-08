@@ -30,7 +30,7 @@ export default function(Vue, { router, head, isClient }) {
 		content: 'article'
 	})
 	head.meta.push({
-		property: 'og:image:secure_url',
+		property: 'og:image',
 		content: `https://blugento-leaderboard.netlify.app/assets/img/opengraph.jpg`
 	})
 	head.meta.push({
