@@ -6,7 +6,8 @@
 		"develop": "gridsome develop",
 		"explore": "gridsome explore",
 		"deploy": "gridsome build && surge --domain blugentoleaderboard.surge.sh dist/",
-		"test:performance": "artillery dino && artillery run -o reports/artillery.json tests/artillery.yml"
+		"test:performance": "mkdir -p reports && artillery dino && artillery run -o reports/artillery.json tests/artillery.yml",
+		"report:performance": "artillery report -o reports/artillery.html reports/artillery.json"
 	},
 	"dependencies": {
 		"axios": "^0.19.2",
