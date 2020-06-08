@@ -4,13 +4,23 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const appName = 'blugento leaderboard',
+	appNameShort = 'leaderboard',
+	appUrl = 'https://blugento-leaderboard.netlify.app',
+	appDescription = 'leaderboard for winners!',
+	appIconFav = './src/assets/img/favicon.jpg',
+	appIconTouch = './src/assets/img/touchicon.jpg',
+	appIconMsTile = './src/assets/img/touchicon-144.jpg',
+	appColourPrimary = '#006eb8',
+	appColourSecondary = '#f18626'
+
 module.exports = {
-	siteName: 'blugento leaderboard',
-	siteDescription: 'leaderboard for winners!',
-	siteUrl: 'https://blugento-leaderboard.netlify.app/surge.sh',
+	siteName: appName,
+	siteDescription: appDescription,
+	siteUrl: appUrl,
 	icon: {
-		favicon: './src/assets/img/favicon.png',
-		touchicon: './src/assets/img/touchicon.png'
+		favicon: appIconFav,
+		touchicon: appIconTouch
 	},
 	transformers: {
 		remark: {
@@ -26,25 +36,21 @@ module.exports = {
 			use: 'gridsome-plugin-typescript'
 		},
 		{
-			use: 'gridsome-plugin-service-worker',
+			use: 'gridsome-plugin-pwa',
 			options: {
-				networkFirst: {
-					precachedRoutes: ['/'],
-					cacheName: 'lb-v1',
-					routes: ['/', /\.(js|css|png)$/]
-				}
-			}
-		},
-		{
-			use: 'gridsome-plugin-manifest',
-			options: {
-				background_color: '#006eb8',
-				icon_path: './src/assets/img/touchicon.jpg',
-				name: 'blugento leaderboard',
-				short_name: 'leaderboard',
+				title: appName,
+				shortName: appNameShort,
+				startUrl: '/',
 				display: 'standalone',
-				theme_color: '#f18626',
-				start_url: '/index.html',
+				statusBarStyle: 'black-translucent',
+				manifestPath: 'manifest.json',
+				disableServiceWorker: false,
+				serviceWorkerPath: 'service-worker.js',
+				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
+				themeColor: appColourPrimary,
+				backgroundColor: appColourPrimary,
+				icon: appIconFav,
+				icon_path: appIconTouch,
 				lang: 'en'
 			}
 		}

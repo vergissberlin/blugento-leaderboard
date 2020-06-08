@@ -2,7 +2,7 @@
 
 # Include
 !/src
-!/static
+!/static/README.md
 !/tests
 !/.artillery.yml
 !/.env.dist
@@ -14,13 +14,8 @@
 !/tsconfig.json
 !/yarn.lock
 
-
 # Exlude everywhere
 *.log
 .cache
 .DS_Store
 src/.temp
-/static/assets/
-/static/manifest.json
-/static/service-worker.js
-
