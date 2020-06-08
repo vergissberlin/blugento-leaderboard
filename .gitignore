@@ -1,7 +1,22 @@
+/*
+
+# Include
+!/src
+!/static
+!/tests
+!/.artillery.yml
+!/.env.dist
+!/.travis.yml
+!/gridsome.server.json
+!/gridsome.config.json
+!/package.json
+!/README.md
+!/tsconfig.json
+!/yarn.lock
+
+
+# Exlude everywhere
 *.log
 .cache
 .DS_Store
 src/.temp
-node_modules
-dist
-.env
