@@ -38,11 +38,11 @@ export default function(Vue, { router, head, isClient }) {
 	})
 	head.meta.push({
 		name: 'og:image:width',
-		content: '512'
+		content: '1200'
 	})
 	head.meta.push({
 		name: 'og:image:height',
-		content: '512'
+		content: '630'
 	})
 
 	// Twitter
