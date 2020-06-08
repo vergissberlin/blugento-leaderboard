@@ -10,6 +10,7 @@ module.exports = {
 	siteName: appConfig.name,
 	siteDescription: appConfig.meta.description,
 	siteUrl: appConfig.url,
+	titleTemplate: '<siteName>',
 	icon: {
 		favicon: appConfig.icon.fav,
 		touchicon: appConfig.icon.touch
