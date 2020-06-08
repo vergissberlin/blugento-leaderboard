@@ -2,13 +2,18 @@
 
 # Include
 !/src
-!/static/README.md
+!/static/
+!/static/assets/
+!/static/assets/img/
+!/static/assets/img/opengraph.jpg
+!/static/assets/img/twitter.jpg
 !/tests
 !/.artillery.yml
 !/.env.dist
 !/.travis.yml
-!/gridsome.server.json
-!/gridsome.config.json
+!/app.config.js
+!/gridsome.server.js
+!/gridsome.config.js
 !/package.json
 !/README.md
 !/tsconfig.json
@@ -19,3 +24,4 @@
 .cache
 .DS_Store
 src/.temp
+!/static/service-worker.js

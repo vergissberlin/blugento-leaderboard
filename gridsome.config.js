@@ -4,23 +4,15 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const appName = 'blugento leaderboard',
-	appNameShort = 'leaderboard',
-	appUrl = 'https://blugento-leaderboard.netlify.app',
-	appDescription = 'leaderboard for winners!',
-	appIconFav = './src/assets/img/favicon.png',
-	appIconTouch = './src/assets/img/touchicon.png',
-	appIconMsTile = './src/assets/img/touchicon-144.jpg',
-	appColourPrimary = '#006eb8',
-	appColourSecondary = '#f18626'
+const appConfig = require('./app.config')
 
 module.exports = {
-	siteName: appName,
-	siteDescription: appDescription,
-	siteUrl: appUrl,
+	siteName: appConfig.name,
+	siteDescription: appConfig.meta.description,
+	siteUrl: appConfig.url,
 	icon: {
-		favicon: appIconFav,
-		touchicon: appIconTouch
+		favicon: appConfig.icon.fav,
+		touchicon: appConfig.icon.touch
 	},
 	transformers: {
 		remark: {
@@ -38,8 +30,8 @@ module.exports = {
 		{
 			use: 'gridsome-plugin-pwa',
 			options: {
-				title: appName,
-				shortName: appNameShort,
+				title: appConfig.name,
+				shortName: appConfig.nameShort,
 				startUrl: '/',
 				display: 'standalone',
 				statusBarStyle: 'black-translucent',
@@ -47,10 +39,10 @@ module.exports = {
 				disableServiceWorker: false,
 				serviceWorkerPath: 'service-worker.js',
 				cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
-				themeColor: appColourPrimary,
-				backgroundColor: appColourPrimary,
-				icon: appIconFav,
-				icon_path: appIconTouch,
+				themeColor: appConfig.colour.primary,
+				backgroundColor: appConfig.colour.primary,
+				icon: appConfig.icon.fav,
+				icon_path: appConfig.icon.touch,
 				lang: 'en'
 			}
 		}
