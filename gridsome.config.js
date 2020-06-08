@@ -39,7 +39,7 @@ module.exports = {
 			use: 'gridsome-plugin-manifest',
 			options: {
 				background_color: '#006eb8',
-				icon_path: './src/assets/img/touchicon.png',
+				icon_path: './src/assets/img/touchicon.jpg',
 				name: 'blugento leaderboard',
 				short_name: 'leaderboard',
 				display: 'standalone',
