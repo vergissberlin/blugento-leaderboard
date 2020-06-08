@@ -10,7 +10,7 @@ module.exports = {
 	url: 'https://blugento-leaderboard.netlify.app',
 	meta: {
 		keywords: 'blugento,leader',
-		description: 'leaderboard for winners!'
+		description: 'Blugento is a great application for managing websites. Every week I award the most active users.'
 	},
 	icon: {
 		fav: './src/assets/img/favicon.png',
