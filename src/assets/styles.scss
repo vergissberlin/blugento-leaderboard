@@ -3,14 +3,9 @@ $background: #006eb8; //16a8a3
 $accent: #f18626; //e45b6c;
 $margin: 40px;
 
-// Components
-@import './scss/avatar';
-@import './scss/card';
-@import './scss/dial';
-@import './scss/leaderboard';
-@import './scss/menu';
-@import './scss/progress';
-@import './scss/statistics';
+.row {
+	margin-top: var(--margin);
+}
 
 // Basics
 html {
