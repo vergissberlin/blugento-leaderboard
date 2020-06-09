@@ -23,7 +23,7 @@
 			</div>
 
 			<div class="dial">
-				<div class="dial-title">{{ level(leader.node.scores) }}</div>
+				<div class="dial-title">{{ leader.node.level }}</div>
 				<div class="dial-value">Level</div>
 			</div>
 		</div>
@@ -47,12 +47,9 @@
 							></div>
 						</div>
 					</dt>
-					<dd>
+					<dd :title="`Level ${user.node.level}`">
 						<div class="leaderboard-name">{{ user.node.name }}</div>
-						<div
-							class="leaderboard-value"
-							:title="`Level ${level(user.node.scores)}`"
-						>{{ user.node.scores }}</div>
+						<div class="leaderboard-value">{{ user.node.scores }}</div>
 					</dd>
 				</template>
 			</dl>
@@ -71,6 +68,7 @@ query {
         name
         gravatar
         scores
+		level
       }
     }
   }
@@ -96,26 +94,6 @@ export default {
 	methods: {
 		procent: function(scores) {
 			return Math.round((100 / this.totalScores) * scores);
-		},
-		level: scores => {
-			switch (true) {
-				case scores > 10 && scores < 12:
-					return 1;
-				case scores >= 12 && scores < 144:
-					return 2;
-				case scores >= 144 && scores < 512:
-					return 3;
-				case scores >= 512 && scores < 1024:
-					return 4;
-				case scores >= 1024 && scores < 2048:
-					return 5;
-				case scores >= 2048 && scores < 4096:
-					return 6;
-				case scores >= 4096:
-					return 7;
-				default:
-					return 0;
-			}
 		}
 	}
 };

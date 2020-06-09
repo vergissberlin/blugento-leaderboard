@@ -7,14 +7,35 @@
 const axios = require('axios')
 const MD5 = require('crypto-js/md5')
 
-function gravatar(email, size = 200) {
+const gravatar = function(email, size = 200) {
 	return `https://www.gravatar.com/avatar/${MD5(email)}?s=${size}&d=robohash&r=x`
 }
 
-function shorten(value) {
+const shorten = function(value) {
 	if (!value) return ''
 	value = value.toString()
 	return `${value.charAt(0)}.`
+}
+
+const level = function(scores) {
+	switch (true) {
+		case scores > 10 && scores < 12:
+			return 1
+		case scores >= 12 && scores < 144:
+			return 2
+		case scores >= 144 && scores < 512:
+			return 3
+		case scores >= 512 && scores < 1024:
+			return 4
+		case scores >= 1024 && scores < 2048:
+			return 5
+		case scores >= 2048 && scores < 4096:
+			return 6
+		case scores >= 4096:
+			return 7
+		default:
+			return 0
+	}
 }
 
 module.exports = function(api) {
@@ -32,18 +53,20 @@ module.exports = function(api) {
 			typeName: 'Users'
 		})
 
-		for (const item of data.contacts) {
+		for (const user of data.contacts) {
+			const scores = user.custom_fields.find((x) => x.kind === 'beta - scores').value
 			collection.addNode({
-				name: `${item.FirstName} ${shorten(item.LastName)}`,
-				gravatar: gravatar(item.Email),
-				scores: item.custom_fields.find((x) => x.kind === 'beta - scores').value
+				name: `${user.FirstName} ${shorten(user.LastName)}`,
+				gravatar: gravatar(user.Email),
+				scores: scores,
+				level: level(scores)
 			})
 		}
 	})
 
 	// API
 	api.configureServer((app) => {
-		app.get('/leader', (req, res) => {
+		app.get('/leader', (_req, res) => {
 			res.send('Hello, world!')
 		})
 	})
