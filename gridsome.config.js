@@ -45,11 +45,11 @@ module.exports = {
 				icon: appConfig.icon.touch,
 				icon_path: appConfig.icon.touch,
 				svgFavicon: appConfig.icon.svg.fav,
-				lang: 'en-GB',
 				msTileColor: appConfig.colour.primary,
 				appleMaskIcon: appConfig.icon.touch,
 				appleMaskIconColor: appConfig.colour.primary,
 				maskableIcon: true,
+				lang: 'en-GB',
 				dir: 'auto'
 			}
 		}
