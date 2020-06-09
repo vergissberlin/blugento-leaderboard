@@ -13,11 +13,11 @@
 
 			<div class="statistics">
 				<div>
-					<div class="statistics-title">Rank</div>
+					<div class="statistics-title">rank</div>
 					<div class="statistics-value">1</div>
 				</div>
 				<div>
-					<div class="statistics-title">Score</div>
+					<div class="statistics-title">scores</div>
 					<div class="statistics-value">{{ leader.node.scores }}</div>
 				</div>
 			</div>
