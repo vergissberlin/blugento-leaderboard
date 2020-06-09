@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-	name: 'blugento leaderboard',
+	name: 'blugento leaderboard 🏆',
 	nameShort: 'leaderboard',
 	url: 'https://blugento-leaderboard.netlify.app',
 	meta: {
