@@ -28,7 +28,7 @@
 	color: rgba(0, 0, 0, 0.6);
 }
 
-@media only screen and (max-width: var(--braek-xs)) {
+@media only screen and (max-width: 840px) {
 	.card {
 		display: block;
 	}
@@ -37,7 +37,6 @@
 		border-radius: var(--border-radius) var(--border-radius) 0 0;
 	}
 }
-
 
 @media (prefers-color-scheme: dark) {
 	.card-info {

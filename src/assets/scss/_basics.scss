@@ -14,7 +14,6 @@
 	--font-weight-light: 300;
 	--font-weight-bold: 700;
 	--font-family: 'Lato', sans-serif;
-	--break-xs: 840px;
 }
 
 * {
@@ -40,7 +39,7 @@ body {
 	margin-top: -4rem;
 }
 
-@media only screen and (max-width: var(--braek-xs)) {
+@media only screen and (max-width: 840px) {
 	html,
 	body {
 		height: auto;
