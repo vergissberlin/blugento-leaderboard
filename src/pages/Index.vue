@@ -8,7 +8,7 @@
 
 			<div class="user row">
 				<h1>{{ leader.node.name }}</h1>
-				<h2>{{ leader.node.scores }} logins</h2>
+				<h2>{{ leader.node.scores }} scores</h2>
 			</div>
 
 			<div class="statistics">
