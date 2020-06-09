@@ -14,6 +14,14 @@ export default function(Vue, { router, head, isClient }) {
 		name: 'keywords',
 		content: appConfig.meta.keywords
 	})
+	head.meta.push({
+		name: 'author',
+		content: 'André Lademann, vergissberlin@googlemail.com'
+	})
+	head.meta.push({
+		name: 'robots',
+		content: 'noindex,nofollow'
+	})
 
 	// OpenGraph
 	// @see https://opengraphcheck.com/result.php?url=https%3A%2F%2Fblugento-leaderboard.netlify.app%2F#.Xt6j52ozY9g
@@ -27,15 +35,11 @@ export default function(Vue, { router, head, isClient }) {
 	})
 	head.meta.push({
 		property: 'og:type',
-		content: 'article'
+		content: 'website'
 	})
 	head.meta.push({
-		property: 'og:image',
+		property: 'og:image:url',
 		content: `https://blugento-leaderboard.netlify.app/assets/img/opengraph.jpg`
-	})
-	head.meta.push({
-		property: 'og:image:alt',
-		content: appConfig.meta.description
 	})
 	head.meta.push({
 		property: 'og:image:width',
@@ -44,6 +48,11 @@ export default function(Vue, { router, head, isClient }) {
 	head.meta.push({
 		property: 'og:image:height',
 		content: '630'
+	})
+
+	head.meta.push({
+		property: 'og:image:alt',
+		content: appConfig.meta.description
 	})
 
 	// Twitter
@@ -70,6 +79,6 @@ export default function(Vue, { router, head, isClient }) {
 	})
 	head.meta.push({
 		name: 'twitter:image:alt',
-		content: appConfig.description
+		content: appConfig.meta.description
 	})
 }

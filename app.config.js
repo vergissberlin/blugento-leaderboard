@@ -5,16 +5,21 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-	name: 'blugento leaderboard 🏆',
+	name: 'blugento leaderboard',
 	nameShort: 'leaderboard',
 	url: 'https://blugento-leaderboard.netlify.app',
 	meta: {
-		keywords: 'blugento,leader',
-		description: 'Blugento is a great application for managing websites. Every week I award the most active users.'
+		keywords: 'blugento,leader,leaderboard,winner',
+		description:
+			'Blugento is a great application for managing dockerized websites. Every week I award the most active users.'
 	},
 	icon: {
 		fav: './src/assets/img/favicon.png',
-		touch: './src/assets/img/touchicon.png'
+		touch: './src/assets/img/touchicon.png',
+		svg: {
+			fav: './src/assets/img/favicon.svg',
+			touch: './src/assets/img/touchicon.svg'
+		}
 	},
 	colour: {
 		primary: '#006eb8',
