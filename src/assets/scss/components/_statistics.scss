@@ -1,0 +1,18 @@
+.statistics {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: var(--padding);
+
+	> div:not(:last-child) {
+		box-shadow: 20px 0px 0px -19px rgba(255, 255, 255, 0.2);
+	}
+
+	&-title {
+		font-size: 1.5em;
+	}
+
+	&-value {
+		color: var(--secondary);
+		font-size: 2em;
+	}
+}

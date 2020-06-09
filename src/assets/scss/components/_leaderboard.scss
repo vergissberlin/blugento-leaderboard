@@ -1,4 +1,3 @@
-
 .leaderboard {
 	height: 100%;
 	counter-reset: leaderboard-counter;
@@ -14,10 +13,9 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			font-size: 1.3em;
+			font-size: 1.2rem;
 			line-height: 0.8;
-			font-weight: 400;
-			color: rgba(0, 0, 0, 0.8);
+			font-weight: var(--font-weight-light);
 		}
 	}
 
@@ -25,9 +23,9 @@
 		display: flex;
 		margin-bottom: 40px;
 		justify-content: space-between;
-	}
 
-	&-value {
-		font-weight: 700;
+		div:last-child {
+			font-weight: var(--font-weight-bold);
+		}
 	}
 }

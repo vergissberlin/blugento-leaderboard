@@ -1,88 +1,66 @@
 <template>
-	<Layout>
-		<div id="leaderboard">
-			<div class="card">
-				<section class="card-info card-section">
-					<div
-						class="avatar row"
-						:style="'background-image: url(' + leader.node.gravatar + ')'"
-					></div>
+	<div class="card">
+		<div class="card-info">
+			<div
+				class="avatar row"
+				:style="'background-image: url(' + leader.node.gravatar + ')'"
+			></div>
 
-					<section class="user row">
-						<h1 class="user-header">
-							{{ leader.node.name }}
-							<h2 class="sub header">{{ leader.node.scores }} logins</h2>
-						</h1>
-					</section>
+			<div class="user row">
+				<h1>{{ leader.node.name }}</h1>
+				<h2>{{ leader.node.scores }} logins</h2>
+			</div>
 
-					<section class="statistics">
-						<article class="statistic">
-							<h4 class="statistic-title">
-								Rank
-							</h4>
-							<h3 class="statistic-value">
-								1
-							</h3>
-						</article>
+			<div class="statistics">
+				<div>
+					<div class="statistics-title">Rank</div>
+					<div class="statistics-value">1</div>
+				</div>
+				<div>
+					<div class="statistics-title">Score</div>
+					<div class="statistics-value">{{ leader.node.scores }}</div>
+				</div>
+			</div>
 
-						<article class="statistic">
-							<h4 class="statistic-title">
-								Score
-							</h4>
-							<h3 class="statistic-value">
-								{{ leader.node.scores }}
-							</h3>
-						</article>
-					</section>
-
-					<div class="dial">
-						<h2 class="dial-title">
-							{{ level(leader.node.scores) }}
-						</h2>
-						<h3 class="dial-value">
-							Level
-						</h3>
-					</div>
-				</section>
-
-				<section class="card-details card-section">
-					<nav class="menu">
-						<article class="menu-item menu-item-active">
-							<g-image
-								src="~/assets/img/blugento-logo.jpg"
-								width="144"
-								alt="blugento logo"
-								quality="92"
-							/>
-						</article>
-					</nav>
-
-					<dl class="leaderboard">
-						<template v-for="user in $page.allUsers.edges">
-							<dt>
-								<article
-									class="progress"
-									:title="`${procent(user.node.scores)}% of ${totalScores} scores.`"
-								>
-									<section
-										class="progress-bar"
-										:style="`width: ${procent(user.node.scores)}%`"
-									></section>
-								</article>
-							</dt>
-							<dd>
-								<div class="leaderboard-name">{{ user.node.name }}</div>
-								<div
-									class="leaderboard-value"
-									:title="`Level ${level(user.node.scores)}`"
-								>{{ user.node.scores }}</div>
-							</dd>
-						</template>
-					</dl>
-				</section>
+			<div class="dial">
+				<div class="dial-title">{{ level(leader.node.scores) }}</div>
+				<div class="dial-value">Level</div>
 			</div>
 		</div>
-	</Layout>
+
+		<div class="card-body">
+			<g-image
+				src="~/assets/img/blugento-logo.svg"
+				width="144"
+				class="row"
+			/>
+			<dl class="leaderboard row">
+				<template v-for="user in $page.allUsers.edges">
+					<dt>
+						<div
+							class="progress"
+							:title="`${procent(user.node.scores)}% of ${totalScores} scores.`"
+						>
+							<div
+								class="progress-bar"
+								:style="`width: ${procent(user.node.scores)}%`"
+							></div>
+						</div>
+					</dt>
+					<dd>
+						<div class="leaderboard-name">{{ user.node.name }}</div>
+						<div
+							class="leaderboard-value"
+							:title="`Level ${level(user.node.scores)}`"
+						>{{ user.node.scores }}</div>
+					</dd>
+				</template>
+			</dl>
+
+			<p class="note">Data is updated on a daily base</p>
+		</div>
+
+	</div>
 </template>
 
 <page-query>

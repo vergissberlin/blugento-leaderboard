@@ -1,0 +1,16 @@
+.user {
+	h1,
+	h2 {
+		font-weight: var(--font-weight-light);
+		margin: 0.2rem;
+	}
+
+	h1 {
+		font-size: 1.22rem;
+	}
+
+	h2 {
+		font-size: 0.82rem;
+		color: var(--gray-500);
+	}
+}

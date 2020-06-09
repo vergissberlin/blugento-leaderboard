@@ -1,0 +1,10 @@
+.progress {
+	background: rgba(0, 0, 0, 0.1);
+	min-height: 0.4rem;
+	overflow: hidden;
+}
+
+.progress-bar {
+	background: var(--secondary);
+	min-height: 0.4rem;
+}

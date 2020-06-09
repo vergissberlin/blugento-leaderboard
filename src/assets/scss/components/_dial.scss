@@ -1,0 +1,23 @@
+.dial {
+	display: inline-block;
+	height: 70px;
+	margin: 50px 0;
+	padding: 40px;
+	background: var(--white);
+	border-radius: 50%;
+	color: var(--secondary);
+	text-shadow: inset 1px 1px 0 rgba(255, 255, 255, 1);
+	box-shadow: 0 4px 15px -10px rgba(0, 0, 0, 0.1), 0 5px 15px 1px rgba(0, 0, 0, 0.18), 0 0 0 15px var(--white),
+		0 0 0 22px var(--secondary), 0 55px 50px -20px rgba(34, 36, 38, 0.25);
+
+	&-title {
+		font-size: 3.8em;
+		font-weight: var(--font-weight-bold);
+		line-height: 0.8;
+	}
+
+	&-value {
+		font-size: 1.8em;
+		font-weight: var(--font-weight-thin);
+	}
+}
