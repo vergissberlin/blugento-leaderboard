@@ -1,8 +1,8 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-import DefaultLayout from '~/layouts/Default.vue'
-import '~/assets/scss/styles.scss'
+import DefaultLayout from '/layouts/Default.vue'
+import '/assets/scss/styles.scss'
 const appConfig = require('../app.config')
 
 export default function(Vue, { router, head, isClient }) {
@@ -85,5 +85,61 @@ export default function(Vue, { router, head, isClient }) {
 	head.meta.push({
 		name: 'twitter:image:alt',
 		content: appConfig.meta.description
+	})
+
+	// Splash screen
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/touchicon.png'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/iphone5_splash.png',
+		media: '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/iphone6_splash.png',
+		media: '(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/iphoneplus_splash.png',
+		media: '(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/iphonex_splash.png',
+		media: '(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/iphonexr_splash.png',
+		media: '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/iphonexsmax_splash.png',
+		media: '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/ipad_splash.png',
+		media: '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/ipadpro1_splash.png',
+		media: '(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/ipadpro3_splash.png',
+		media: '(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/ipadpro2_splash.png',
+		media: '(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)'
 	})
 }
