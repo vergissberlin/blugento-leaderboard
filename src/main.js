@@ -88,58 +88,136 @@ export default function(Vue, { router, head, isClient }) {
 	})
 
 	// Splash screen
+	head.meta.push({
+		name: 'apple-mobile-web-app-capable',
+		content: 'yes'
+	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
 		href: '/assets/img/touchicon.png'
 	})
+	head.link.push({ rel: 'apple-touch-icon', sizes: '180x180', href: '/assets/img/splash/apple-icon-180.jpg' })
+	head.link.push({ rel: 'apple-touch-icon', sizes: '167x167', href: '/assets/img/splash/apple-icon-167.jpg' })
+	head.link.push({ rel: 'apple-touch-icon', sizes: '152x152', href: '/assets/img/splash/apple-icon-152.jpg' })
+	head.link.push({ rel: 'apple-touch-icon', sizes: '120x120', href: '/assets/img/splash/apple-icon-120.jpg' })
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash/iphone5_splash.png',
-		media: '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
+		href: '/assets/img/splash/apple-splash-2048-2732.jpg',
+		media:
+			'(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'
 	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash/iphone6_splash.png',
-		media: '(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)'
+		href: '/assets/img/splash/apple-splash-2732-2048.jpg',
+		media:
+			'(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'
 	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash/iphoneplus_splash.png',
-		media: '(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)'
+		href: '/assets/img/splash/apple-splash-1668-2388.jpg',
+		media:
+			'(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'
 	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash/iphonex_splash.png',
-		media: '(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)'
+		href: '/assets/img/splash/apple-splash-2388-1668.jpg',
+		media:
+			'(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'
 	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash/iphonexr_splash.png',
-		media: '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)'
+		href: '/assets/img/splash/apple-splash-1668-2224.jpg',
+		media:
+			'(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'
 	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash/iphonexsmax_splash.png',
-		media: '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)'
+		href: '/assets/img/splash/apple-splash-2224-1668.jpg',
+		media:
+			'(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'
 	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash/ipad_splash.png',
-		media: '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)'
+		href: '/assets/img/splash/apple-splash-1536-2048.jpg',
+		media:
+			'(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'
 	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash/ipadpro1_splash.png',
-		media: '(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)'
+		href: '/assets/img/splash/apple-splash-2048-1536.jpg',
+		media:
+			'(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'
 	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash/ipadpro3_splash.png',
-		media: '(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)'
+		href: '/assets/img/splash/apple-splash-1242-2688.jpg',
+		media:
+			'(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'
 	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash/ipadpro2_splash.png',
-		media: '(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)'
+		href: '/assets/img/splash/apple-splash-2688-1242.jpg',
+		media:
+			'(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/apple-splash-1125-2436.jpg',
+		media:
+			'(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/apple-splash-2436-1125.jpg',
+		media:
+			'(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/apple-splash-828-1792.jpg',
+		media:
+			'(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/apple-splash-1792-828.jpg',
+		media:
+			'(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/apple-splash-1242-2208.jpg',
+		media:
+			'(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/apple-splash-2208-1242.jpg',
+		media:
+			'(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/apple-splash-750-1334.jpg',
+		media:
+			'(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/apple-splash-1334-750.jpg',
+		media:
+			'(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/apple-splash-640-1136.jpg',
+		media:
+			'(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'
+	})
+	head.link.push({
+		rel: 'apple-touch-startup-image',
+		href: '/assets/img/splash/apple-splash-1136-640.jpg',
+		media:
+			'(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'
 	})
 }

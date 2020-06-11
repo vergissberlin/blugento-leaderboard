@@ -24,4 +24,4 @@
 .cache
 .DS_Store
 src/.temp
-!/static/service-worker.js
+/static/assets/img/splash
