@@ -2,7 +2,7 @@
 	"name": "blugento-leaderboard",
 	"private": true,
 	"scripts": {
-		"build": "gridsome build && pwa-asset-generator --background '#006eb8'  --manifest dist/manifest.json --index dist/index.html src/assets/img/touchicon.png --path-override assets/img/splash --quality 92 ./static/assets/img/splash",
+		"build": "pwa-asset-generator --background '#006eb8' src/assets/img/touchicon.png --path-override assets/img/splash --quality 92 ./static/assets/img/splash && gridsome build",
 		"develop": "gridsome develop",
 		"explore": "gridsome explore",
 		"deploy": "gridsome build && surge --domain blugentoleaderboard.surge.sh dist/",
