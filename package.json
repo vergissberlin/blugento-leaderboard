@@ -2,7 +2,7 @@
 	"name": "blugento-leaderboard",
 	"private": true,
 	"scripts": {
-		"build": "pwa-asset-generator --padding '12px' --splash-only --background 'linear-gradient(0deg, rgba(0,69,116,1) 0%, rgba(0,110,184,1) 42%)' src/assets/img/touchicon.png --path-override assets/img/splash --quality 92 ./static/assets/img/splash && gridsome build",
+		"build": "pwa-asset-generator --padding '256px' --splash-only --background '#006eb8' src/assets/img/touchicon.png --path-override assets/img/splash --quality 92 ./static/assets/img/splash && gridsome build",
 		"develop": "gridsome develop",
 		"explore": "gridsome explore",
 		"deploy": "yarn build && surge --domain blugentoleaderboard.surge.sh dist/",
