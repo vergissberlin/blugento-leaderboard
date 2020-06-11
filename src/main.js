@@ -88,18 +88,6 @@ export default function(Vue, { router, head, isClient }) {
 	})
 
 	// Splash screen
-	head.meta.push({
-		name: 'apple-mobile-web-app-capable',
-		content: 'yes'
-	})
-	head.link.push({
-		rel: 'apple-touch-startup-image',
-		href: '/assets/img/touchicon.png'
-	})
-	head.link.push({ rel: 'apple-touch-icon', sizes: '180x180', href: '/assets/img/splash/apple-icon-180.jpg' })
-	head.link.push({ rel: 'apple-touch-icon', sizes: '167x167', href: '/assets/img/splash/apple-icon-167.jpg' })
-	head.link.push({ rel: 'apple-touch-icon', sizes: '152x152', href: '/assets/img/splash/apple-icon-152.jpg' })
-	head.link.push({ rel: 'apple-touch-icon', sizes: '120x120', href: '/assets/img/splash/apple-icon-120.jpg' })
 	head.link.push({
 		rel: 'apple-touch-startup-image',
 		href: '/assets/img/splash/apple-splash-2048-2732.jpg',
