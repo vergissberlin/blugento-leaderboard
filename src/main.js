@@ -14,6 +14,11 @@ export default function(Vue, { router, head, isClient }) {
 		href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap'
 	})
 
+	head.link.push({
+		rel: 'blue',
+		href: 'mask-icon'
+	})
+
 	// Keywords
 	head.meta.push({
 		name: 'keywords',
@@ -186,13 +191,13 @@ export default function(Vue, { router, head, isClient }) {
 	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash-custom/apple-splash-750-1334.jpg',
+		href: '/assets/img/splash/apple-splash-750-1334.jpg',
 		media:
 			'(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'
 	})
 	head.link.push({
 		rel: 'apple-touch-startup-image',
-		href: '/assets/img/splash-custom/apple-splash-1334-750.jpg',
+		href: '/assets/img/splash/apple-splash-1334-750.jpg',
 		media:
 			'(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'
 	})
