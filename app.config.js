@@ -15,6 +15,7 @@ module.exports = {
 	},
 	icon: {
 		fav: './src/assets/img/favicon.png',
+		manifest: './src/assets/img/manifesticon.png',
 		touch: './src/assets/img/touchicon.png',
 		svg: {
 			fav: './src/assets/img/favicon.svg',
