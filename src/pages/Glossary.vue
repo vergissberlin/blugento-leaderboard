@@ -1,6 +1,5 @@
 <template>
 	<Layout>
-
 		<div class="row">
 			<table class="table">
 				<tr>
@@ -15,6 +14,7 @@
 					<td>50</td>
 				</tr>
 			</table>
+
 			<table class="table">
 				<tr>
 					<th colspan="2">Blugento</th>
@@ -46,28 +46,14 @@
 					<td>5</td>
 				</tr>
 			</table>
-
 		</div>
 	</Layout>
 </template>
-<page-query>
-query {
-  allUsers(sortBy: "scores", order: DESC, limit: 1) {
-    edges {
-      node {
-        name
-        gravatar
-        scores
-		level
-      }
-    }
-  }
-}
-</page-query>
+
 <script>
 export default {
 	metaInfo: {
-		title: "glossary"
+		title: 'glossary'
 	}
-};
+}
 </script>

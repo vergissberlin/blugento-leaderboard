@@ -36,6 +36,16 @@ body {
 	text-align: center;
 }
 
+a,
+a:visited {
+	color: var(--secondary);
+	text-decoration: none;
+	&:hover {
+		color: var(--gray-500);
+		text-decoration: underline;
+	}
+}
+
 @media only screen and (max-width: 840px) {
 	html,
 	body {

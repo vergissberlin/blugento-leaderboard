@@ -7,7 +7,7 @@
 		"explore": "gridsome explore",
 		"deploy": "yarn build && surge --domain blugentoleaderboard.surge.sh dist/",
 		"test:performance": "mkdir -p reports && artillery dino && artillery run -o reports/artillery.json tests/artillery.yml",
-		"report:performance": "artillery report -o reports/artillery.html reports/artillery.json"
+		"report:performance": "artillery report -o reports/artillery.html reports/artillery.json && open reports/artillery.html"
 	},
 	"dependencies": {
 		"axios": "^0.19.2",
