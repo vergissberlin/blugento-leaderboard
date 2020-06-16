@@ -67,7 +67,7 @@ module.exports = function(api) {
 	// API
 	api.configureServer((app) => {
 		app.get('/leader', (_req, res) => {
-			res.send('Hello, world!')
+			res.json({ message: 'Hello leaders!' })
 		})
 	})
 }
