@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="app">
 		<div class="card">
 			<Leader />
 			<div class="card-body">
