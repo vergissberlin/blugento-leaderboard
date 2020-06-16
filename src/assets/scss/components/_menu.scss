@@ -1,0 +1,11 @@
+.menu {
+	a,
+	a:visited {
+		display: inline-block;
+		color: var(--secondary);
+		padding: 1rem;
+		&:hover {
+			color: var(--gray-500);
+		}
+	}
+}

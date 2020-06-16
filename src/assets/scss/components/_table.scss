@@ -1,0 +1,27 @@
+.table {
+	text-align: left;
+	width: 100%;
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+
+	tr > th {
+		font-weight: var(--font-weight-bold);
+		color: var(--secondary);
+	}
+
+	td,
+	th {
+		padding: 0.42rem 0.64rem;
+	}
+	td {
+		cursor: help;
+		&:last-child {
+			text-align: right;
+			border-left: solid 1px var(--gray-200);
+			width: 12%;
+			font-weight: var(--font-weight-bold);
+		}
+	}
+}
