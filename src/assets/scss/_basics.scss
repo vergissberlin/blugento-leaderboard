@@ -16,6 +16,10 @@
 	--font-family: 'Lato', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 html,
 body {
 	height: 100%;
@@ -69,5 +73,11 @@ a:visited {
 		--gray-500: hsl(200, 19%, 50%);
 		--gray-800: hsl(200, 19%, 80%);
 		--gray-900: hsl(200, 19%, 90%);
+	}
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
 	}
 }

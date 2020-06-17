@@ -14,13 +14,13 @@
 	td,
 	th {
 		padding: 0.42rem 0.64rem;
+		vertical-align: top;
 	}
 	td {
 		cursor: help;
 		&:last-child {
 			text-align: right;
-			border-left: solid 1px var(--gray-200);
-			width: 12%;
+			width: 20%;
 			font-weight: var(--font-weight-bold);
 		}
 	}
