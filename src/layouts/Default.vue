@@ -15,7 +15,7 @@
 				<slot />
 			</div>
 		</div>
-		<footer>
+		<footer class="footer">
 			<nav class="menu"><a href="/imprint#card-body">imprint</a> | <a href="/privacy#card-body">privacy</a></nav>
 		</footer>
 	</div>
