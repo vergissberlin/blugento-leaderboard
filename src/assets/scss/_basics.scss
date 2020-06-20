@@ -74,6 +74,10 @@ a:visited {
 		--gray-800: hsl(200, 19%, 80%);
 		--gray-900: hsl(200, 19%, 90%);
 	}
+	body {
+		background-image: url(/assets/img/background-dark.jpg);
+		background-size: cover;
+	}
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
