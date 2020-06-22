@@ -1,6 +1,9 @@
 <template>
 	<div class="card-info">
-		<div class="avatar row" :style="'background-image: url(' + leader.node.gravatar + ')'"></div>
+		<div
+			class="avatar row"
+			:style="'background-image: url(' + leader.node.gravatar + ')'"
+		></div>
 
 		<div class="user row">
 			<h1>{{ leader.node.name }}</h1>
@@ -22,6 +25,8 @@
 			<div class="dial-title">{{ leader.node.level }}</div>
 			<div class="dial-value">Level</div>
 		</div>
+
+		<Fullscreen class="fullscreen" />
 	</div>
 </template>
 <static-query>
@@ -39,12 +44,17 @@ query {
 }
 </static-query>
 <script>
+import Fullscreen from "~/components/Fullscreen.vue";
+
 export default {
-	name: 'Leader',
+	name: "Leader",
 	computed: {
 		leader() {
-			return this.$static.allUsers.edges[0]
+			return this.$static.allUsers.edges[0];
 		}
+	},
+	components: {
+		Fullscreen
 	}
-}
+};
 </script>

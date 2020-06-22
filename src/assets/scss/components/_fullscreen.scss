@@ -1,0 +1,11 @@
+.fullscreen {
+	position: absolute;
+	left: var(--margin);
+	bottom: var(--margin);
+	fill: var(--gray-500);
+	cursor: pointer;
+
+	&:hover {
+		fill: var(--gray-400);
+	}
+}
