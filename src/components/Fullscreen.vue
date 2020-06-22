@@ -22,12 +22,18 @@ export default {
 			type: String,
 			required: true,
 			default: "html"
+		},
+		mobile: {
+			type: String,
+			default: false
 		}
 	},
-	computed: {
-		mobile() {
-			return 'ontouchstart' in window
-		}
+	mounted: function() {
+		this.$nextTick(function() {
+			if (process.isClient) {
+				this.mobile = "ontouchstart" in window;
+			}
+		});
 	},
 	methods: {
 		toggleFullscreen() {
