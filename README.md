@@ -11,7 +11,15 @@ Leaderboard to motivate users to use <https://app.blugento.com>.
 
 One click to deploy on _free for testing_ hosting and build service of netlify:
 
+#### netlify
+
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vergissberlin/blugento-leaderboard)
+
+#### heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vergissberlin/blugento-leaderboard)
+
+
 
 ### Locally
 

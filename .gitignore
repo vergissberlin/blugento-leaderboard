@@ -12,6 +12,7 @@
 !/.env.dist
 !/.travis.yml
 !/app.config.js
+!/app.json
 !/CORS
 !/gridsome.server.js
 !/gridsome.config.js
