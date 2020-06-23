@@ -20,7 +20,6 @@
 	"env": {
 		"AUTOPILOT_KEY": {
 			"description": "Your autopilot API key to get access to the data",
-			"generator": "secret",
 			"required": true
 		},
 		"SEGMENTS_LIST": {
