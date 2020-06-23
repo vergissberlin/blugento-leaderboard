@@ -19,8 +19,6 @@ One click to deploy on _free for testing_ hosting and build service of netlify:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vergissberlin/blugento-leaderboard)
 
-
-
 ### Locally
 
 #### 0. Preparation
