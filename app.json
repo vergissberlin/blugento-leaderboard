@@ -18,11 +18,11 @@
 		{
 			"url": "heroku/nodejs"
 		}
-  ],
-  "scripts": {
-    "heroku-prebuild": "yarn global add @gridsome/cli",
-    "heroku-postbuild": "cp -rf dist ." 
-  },
+	],
+	"scripts": {
+		"heroku-prebuild": "yarn global add @gridsome/cli",
+		"heroku-postbuild": "cp -rf dist ."
+	},
 	"env": {
 		"AUTOPILOT_KEY": {
 			"description": "Your autopilot API key to get access to the data",
