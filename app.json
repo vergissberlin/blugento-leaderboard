@@ -3,11 +3,15 @@
   "description": "Leaderboard to motivate users to use <https://app.blugento.com>.",
   "repository": "https://github.com/vergissberlin/blugento-leaderboard",
   "logo": "https://blugentoleaderboard.surge.sh/assets/static/touchicon.7b22250.e75c93db205ca3abe294e00fec7c2f88.png",
+  "website": "https://github.com/vergissberlin/blugento-leaderboard"
   "keywords": [
     "node",
     "gridsome",
     "static"
   ],
+  "image": "heroku/nodejs",
+  "stack": "heroku-18",
+  "success_url": "/",
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-nodejs"
@@ -18,7 +22,22 @@
   ],
   "addons": [],
   "env": {
-    "AUTOPILOT_KEY": "",
-    "SEGMENTS_LIST":"https://api2.autopilothq.com/v1/smart_segments/contactlist_XXXXXXX/contacts"
+    "AUTOPILOT_KEY": {
+      "description" : "Your autopilot API key to get access to the data",
+      "generator": "secret",
+      "required": true
+    },
+    "SEGMENTS_LIST": {
+      "description": "The path to the contact list",
+      "value": "https://api2.autopilothq.com/v1/smart_segments/contactlist_XXXXXXX/contacts",
+      "required": true
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "yarn test"
+      }
+    }
   }
 }
