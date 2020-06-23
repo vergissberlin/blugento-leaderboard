@@ -6,6 +6,9 @@
 	"website": "https://github.com/vergissberlin/blugento-leaderboard",
 	"keywords": ["node", "gridsome", "static"],
 	"image": "heroku/nodejs",
+	"engines": {
+		"yarn": "1.x"
+	},
 	"stack": "heroku-18",
 	"success_url": "/",
 	"buildpacks": [
@@ -15,8 +18,11 @@
 		{
 			"url": "heroku/nodejs"
 		}
-	],
-	"addons": [],
+  ],
+  "scripts": {
+    "heroku-prebuild": "yarn global add @gridsome/cli",
+    "heroku-postbuild": "cp -rf dist ." 
+  },
 	"env": {
 		"AUTOPILOT_KEY": {
 			"description": "Your autopilot API key to get access to the data",
@@ -26,7 +32,9 @@
 			"description": "The path to the contact list",
 			"value": "https://api2.autopilothq.com/v1/smart_segments/contactlist_XXXXXXX/contacts",
 			"required": true
-		}
+		},
+		"YARN_PRODUCTION": true,
+		"NPM_CONFIG_PRODUCTION": true
 	},
 	"environments": {
 		"test": {
