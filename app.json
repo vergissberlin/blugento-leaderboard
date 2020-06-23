@@ -7,7 +7,7 @@
 	"keywords": ["node", "gridsome", "static"],
 	"image": "heroku/nodejs",
 	"engines": {
-		"yarn": "1.x"
+		"yarn": "1.22.x"
 	},
 	"stack": "heroku-18",
 	"success_url": "/",
