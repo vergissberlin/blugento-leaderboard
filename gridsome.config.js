@@ -31,22 +31,22 @@ module.exports = {
 				config: {
 					'/glossary': {
 						changefreq: 'monthly',
-						priority: 0.5,
-						lastmod: '2020-06-12'
+						lastmod: '2020-06-29'
 					},
 					'/imprint': {
 						changefreq: 'monthly',
 						priority: 0.2,
-						lastmod: '2020-06-12'
+						lastmod: '2020-07-01'
 					},
 					'/privacy': {
 						changefreq: 'monthly',
 						priority: 0.1,
-						lastmod: '2020-06-12'
+						lastmod: '2020-07-08'
 					},
 					'/': {
 						changefreq: 'daily',
-						priority: 0.9
+						priority: 1,
+						lastmod: new Date().toString()
 					}
 				}
 			}
