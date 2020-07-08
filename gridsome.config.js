@@ -48,7 +48,28 @@ module.exports = {
 						priority: 1,
 						lastmod: new Date().toString()
 					}
-				}
+				},
+				staticUrls: [
+					{
+						url: '/assets/',
+						img: [
+							{
+								url: '/assets/img/twitter.png',
+								caption: 'Teaser for Twitter',
+								title: 'Blugento Leader On Twittter',
+								geoLocation: 'Leipzig, Germany',
+								license: 'https://creativecommons.org/licenses/by/4.0/'
+							},
+							{
+								url: '/assets/img/opengraph.png',
+								caption: 'Teaser for OpenGraph devices',
+								title: 'Blugento Leader On OpenGraph capable clients.',
+								geoLocation: 'Leipzig, Germany',
+								license: 'https://creativecommons.org/licenses/by/4.0/'
+							}
+						]
+					}
+				]
 			}
 		},
 		{
