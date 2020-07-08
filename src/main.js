@@ -19,6 +19,12 @@ export default function(Vue, { router, head, isClient }) {
 		href: 'mask-icon'
 	})
 
+	// Google console
+	head.meta.push({
+		name: 'google-site-verification',
+		content: 'x5JzrjkLi9kK142JSY96trFc702qEgkxK7E_LxLEqkU'
+	})
+
 	// Keywords
 	head.meta.push({
 		name: 'keywords',

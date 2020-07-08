@@ -26,6 +26,32 @@ module.exports = {
 			use: 'gridsome-plugin-brotli'
 		},
 		{
+			use: '@gridsome/plugin-sitemap',
+			options: {
+				config: {
+					'/glossary': {
+						changefreq: 'monthly',
+						priority: 0.5,
+						lastmod: '2020-06-12'
+					},
+					'/imprint': {
+						changefreq: 'monthly',
+						priority: 0.2,
+						lastmod: '2020-06-12'
+					},
+					'/privacy': {
+						changefreq: 'monthly',
+						priority: 0.1,
+						lastmod: '2020-06-12'
+					},
+					'/': {
+						changefreq: 'daily',
+						priority: 0.9
+					}
+				}
+			}
+		},
+		{
 			use: 'gridsome-plugin-typescript'
 		},
 		{

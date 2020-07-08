@@ -12,6 +12,7 @@
 		"report:performance": "artillery report -o reports/artillery.html reports/artillery.json && open reports/artillery.html"
 	},
 	"dependencies": {
+		"@gridsome/plugin-sitemap": "^0.4.0",
 		"axios": "^0.19.2",
 		"gridsome": "^0.7.17",
 		"gridsome-plugin-brotli": "^0.1.3",
