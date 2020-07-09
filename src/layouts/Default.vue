@@ -18,6 +18,14 @@
 		<footer class="footer">
 			<nav class="menu"><a href="/imprint#card-body">imprint</a> | <a href="/privacy#card-body">privacy</a></nav>
 		</footer>
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"url": "https://blugento-leaderboard.surge.sh",
+			"logo": "https://blugento-leaderboard.surge.sh/assets/img/blugentoleaders-logo.png"
+		}
+		</script>
 	</div>
 </template>
 
