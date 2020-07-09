@@ -2,6 +2,10 @@
 @import 'basics';
 @import 'utilities';
 
+// Animations
+@import './animations/shake';
+@import './animations/whale';
+
 // Components
 @import './components/app';
 @import './components/avatar';
@@ -17,6 +21,5 @@
 @import './components/progress';
 @import './components/rain';
 @import './components/statistics';
-@import './components/shake';
 @import './components/table';
 @import './components/user';

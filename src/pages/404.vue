@@ -15,6 +15,7 @@
 				src="~/assets/img/lost.png"
 				width="256"
 				class="shake"
+				style="z-index: 10"
 				alt="Lost in space with rain"
 			/>
 		</a>
@@ -31,6 +32,14 @@
 				type="audio/mpeg"
 			/>
 		</audio>
+		<br>
+		<g-image
+			src="~/assets/img/whale.png"
+			width="312"
+			class="whale"
+			style="z-index: 0"
+			alt="Lost in space with rain"
+		/>
 	</div>
 </template>
 

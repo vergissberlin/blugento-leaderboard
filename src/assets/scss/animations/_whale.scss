@@ -1,0 +1,29 @@
+.whale{
+  animation: whaleFrames ease-in-out 42s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  z-index: -1;
+  opacity: .4;
+}
+
+@keyframes whaleFrames{
+  0% {
+    transform:  translate(361px,99px)  rotate(-42deg) scaleX(1.10) scaleY(1.10) ;
+  }
+  26% {
+    transform:  translate(323px,-308px)  rotate(8deg) scaleX(0.97) scaleY(0.97) ;
+  }
+  44% {
+    transform:  translate(-496px,-279px)  rotate(-12deg) scaleX(0.90) scaleY(0.90) ;
+  }
+  71% {
+    transform:  translate(-204px,174px)  rotate(22deg) scaleX(0.90) scaleY(1.05) ;
+  }
+  85% {
+    transform:  translate(361px,99px)  rotate(-42deg) scaleX(1.10) scaleY(1.10) ;
+  }
+  100% {
+    transform:  translate(361px,99px)  rotate(-42deg) scaleX(1.10) scaleY(1.10) ;
+  }
+}
+
