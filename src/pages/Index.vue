@@ -39,8 +39,32 @@ query {
 </page-query>
 <script>
 export default {
-	metaInfo: {
-		title: "board"
+	data() {
+		return {
+			jsonld: {
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				url: "https://blugento-leaderboard.surge.sh",
+				logo:
+					"https://blugento-leaderboard.surge.sh/assets/img/blugentoleaders-logo.png",
+				name: "blugento leaderboard",
+				address: {
+					"@type": "PostalAddress",
+					addressLocality: "Leipzig, Germany",
+					postalCode: "04229",
+					streetAddress: "Nonnenstraße 11c",
+					email: "info@blugento.com"
+				}
+			}
+		};
+	},
+	metaInfo() {
+		return {
+			script: [
+				{ innerHTML: JSON.stringify(this.jsonld), type: "application/ld+json" }
+			],
+			title: "board"
+		};
 	},
 	computed: {
 		totalScores() {
