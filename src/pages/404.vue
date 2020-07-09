@@ -8,7 +8,6 @@
 			:key="index"
 		></i>
         <g-image src="~/assets/img/lost.png" width="256" />
-
 	</div>
 </template>
 
