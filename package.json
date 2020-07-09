@@ -7,7 +7,7 @@
 		"build": "pwa-asset-generator --padding '256px' --splash-only --background '#006eb8' src/assets/img/manifesticon.png --path-override assets/img/splash --quality 92 ./static/assets/img/splash && gridsome build",
 		"develop": "gridsome develop",
 		"explore": "gridsome explore",
-		"deploy": "yarn build && surge --domain blugentoleaderboard.surge.sh dist/",
+		"deploy": "yarn build && surge --domain https://blugentoleaderboard.surge.sh dist/",
 		"test:performance": "mkdir -p reports && artillery dino && artillery run -o reports/artillery.json tests/artillery.yml",
 		"report:performance": "artillery report -o reports/artillery.html reports/artillery.json && open reports/artillery.html"
 	},

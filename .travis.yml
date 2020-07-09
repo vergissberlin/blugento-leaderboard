@@ -19,7 +19,7 @@ before_deploy:
 deploy:
   provider: surge
   project: ./dist/
-  domain: blugentoleaderboard.surge.sh
+  domain: https://blugentoleaderboard.surge.sh
   skip_cleanup: true
   on:
     branch: master
