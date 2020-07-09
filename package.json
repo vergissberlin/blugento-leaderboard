@@ -30,6 +30,6 @@
 		"sharp": "0.25.3",
 		"ts-loader": "7.0.5",
 		"typescript": "3.9.5",
-		"vue-property-decorator": "8.4.2"
+		"vue-property-decorator": "8.5.1"
 	}
 }
