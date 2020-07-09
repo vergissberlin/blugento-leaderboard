@@ -4713,10 +4713,10 @@ gridsome-plugin-manifest@0.3.5:
     rename "1.*"
     sharp "^0.25.0"
 
-gridsome-plugin-pwa@0.0.17:
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-pwa/-/gridsome-plugin-pwa-0.0.17.tgz#f7eb9a4d06e07bf2f4d368898188f9a726ba3849"
-  integrity sha512-SffPOcqfij/o/j2SRq0TLsgvXmJtQ4u9OvOG3IU3w3ogr0LHB08pnO8RJyaCNJ/H7rX6N3lXln6BCKqNc2z8YQ==
+gridsome-plugin-pwa@0.0.18:
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-pwa/-/gridsome-plugin-pwa-0.0.18.tgz#e4ca5c82cf3cfaa6ee0a381c6372a606d622aad5"
+  integrity sha512-9GUAUDiQ/HXR1FMYR0bAULf8RT+Megh8x90pJIojP/MipDabpiWJG0CSqH+CxKcvZl2eoDC8wW+H1tOL1nkljw==
   dependencies:
     fs-extra "^8.1.0"
     register-service-worker "^1.6.2"
