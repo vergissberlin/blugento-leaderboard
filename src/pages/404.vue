@@ -7,7 +7,13 @@
 			v-for="index in 144"
 			:key="index"
 		></i>
-        <g-image src="~/assets/img/lost.png" width="256" />
+		<a href="/" title="go back home">
+			<g-image
+				src="~/assets/img/lost.png"
+				width="256"
+                alt="Lost in space with rain"                
+			/>
+		</a>
 	</div>
 </template>
 
@@ -15,7 +21,7 @@
 	h1 {
 		font-size: 12rem;
 		font-weight: 800;
-        margin-top: 2rem;
+		margin-top: 2rem;
 		margin-bottom: 0;
 	}
 	p {
