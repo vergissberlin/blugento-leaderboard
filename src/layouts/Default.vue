@@ -23,7 +23,15 @@
 			"@context": "https://schema.org",
 			"@type": "Organization",
 			"url": "https://blugento-leaderboard.surge.sh",
-			"logo": "https://blugento-leaderboard.surge.sh/assets/img/blugentoleaders-logo.png"
+			"logo": "https://blugento-leaderboard.surge.sh/assets/img/blugentoleaders-logo.png",
+			"name": "blugento leaderboard",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Leipzig, Germany",
+				"postalCode": "04229",
+				"streetAddress": "Nonnenstraße 11c",
+				"email": "info@blugento.com"
+			}
 		}
 		</script>
 	</div>
