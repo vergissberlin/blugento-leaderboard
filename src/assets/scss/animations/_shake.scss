@@ -1,7 +1,7 @@
-
 .shake {
 	animation: shake 4s;
 	animation-iteration-count: infinite;
+	z-index: 10;
 }
 
 @keyframes shake {

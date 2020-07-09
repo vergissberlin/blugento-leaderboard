@@ -1,29 +1,45 @@
-.whale{
-  animation: whaleFrames ease-in-out 42s;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 50%;
-  z-index: -1;
-  opacity: .4;
+.whale {
+	animation: whaleFrames ease-in-out 64s;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+	z-index: 0;
 }
 
-@keyframes whaleFrames{
-  0% {
-    transform:  translate(361px,99px)  rotate(-42deg) scaleX(1.10) scaleY(1.10) ;
-  }
-  26% {
-    transform:  translate(323px,-308px)  rotate(8deg) scaleX(0.97) scaleY(0.97) ;
-  }
-  44% {
-    transform:  translate(-496px,-279px)  rotate(-12deg) scaleX(0.90) scaleY(0.90) ;
-  }
-  71% {
-    transform:  translate(-204px,174px)  rotate(22deg) scaleX(0.90) scaleY(1.05) ;
-  }
-  85% {
-    transform:  translate(361px,99px)  rotate(-42deg) scaleX(1.10) scaleY(1.10) ;
-  }
-  100% {
-    transform:  translate(361px,99px)  rotate(-42deg) scaleX(1.10) scaleY(1.10) ;
-  }
+@keyframes whaleFrames {
+	0% {
+		opacity: 0.4;
+		transform: translate(361px, 99px) rotate(-42deg) scaleX(1.1) scaleY(1.1);
+	}
+	18% {
+		opacity: 0.3;
+		transform: translate(323px, -308px) rotate(8deg) scaleX(0.96) scaleY(0.96);
+	}
+	29% {
+		opacity: 0.2;
+		transform: translate(-316px, -147px) rotate(5deg) scaleX(0.8) scaleY(0.8);
+	}
+	43% {
+		opacity: 0.18;
+		transform: translate(-392px, -110px) rotate(-4deg) scaleX(0.72) scaleY(0.72);
+	}
+	52% {
+		opacity: 0.23;
+		transform: translate(-483px, -67px) rotate(-10deg) scaleX(0.8) scaleY(0.8);
+	}
+	62% {
+		opacity: 0.25;
+		transform: translate(-522px, -48px) rotate(-12deg) scaleX(0.9) scaleY(0.9);
+	}
+	73% {
+		opacity: 0.42;
+		transform: translate(-256px, 231px) rotate(30deg) scaleX(1) scaleY(1);
+	}
+	90% {
+		opacity: 0.4;
+		transform: translate(361px, 99px) rotate(-42deg) scaleX(1.1) scaleY(1.1);
+	}
+	100% {
+		opacity: 0.4;
+		transform: translate(361px, 99px) rotate(-42deg) scaleX(1.1) scaleY(1.1);
+	}
 }
-
