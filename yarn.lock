@@ -851,7 +851,7 @@
     sort-package-json "^1.15.0"
     update-notifier "^4.1.0"
 
-"@gridsome/plugin-sitemap@^0.4.0":
+"@gridsome/plugin-sitemap@0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@gridsome/plugin-sitemap/-/plugin-sitemap-0.4.0.tgz#dbd51c747cb8d6d9c827104c832e35a5aa4807af"
   integrity sha512-fAwC/7+jCM6uTx7m7cEHBeoZOuxkuXy9LCDS65VUiSMgelmMjQBcrsCBFWULaE65sl/wPB6eGRmCIG+d38L6Qw==
@@ -1519,7 +1519,7 @@ anymatch@~3.1.1:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-app.json@^1.3.0:
+app.json@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/app.json/-/app.json-1.3.0.tgz#273057a08cc503018044e34b65b5fda14806b5d3"
   integrity sha1-JzBXoIzFAwGARONLZbX9oUgGtdM=
@@ -1740,7 +1740,7 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.10.0.tgz#a17b3a8ea811060e74d47d306122400ad4497ae2"
   integrity sha512-3YDiu347mtVtjpyV3u5kVqQLP242c06zwDOgpeRnybmXlYYsLbtTrUBUm8i8srONt+FWobl5aibnU1030PeeuA==
 
-axios@^0.19.2:
+axios@0.19.2:
   version "0.19.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
   integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
@@ -2890,7 +2890,7 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
-crypto-js@^4.0.0:
+crypto-js@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.0.0.tgz#2904ab2677a9d042856a2ea2ef80de92e4a36dcc"
   integrity sha512-bzHZN8Pn+gS7DQA6n+iUmBfl0hO5DJq++QP3U6uTucDtk/0iGpXd/Gg7CGR0p8tJhofJyaKoWBuJI4eAO00BBg==
@@ -4701,7 +4701,7 @@ graphql@^14.4.2:
   dependencies:
     iterall "^1.2.2"
 
-gridsome-plugin-brotli@^0.1.3:
+gridsome-plugin-brotli@0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-brotli/-/gridsome-plugin-brotli-0.1.3.tgz#072eb9ef141a5eda49b8fb79ff345a5cfd82fd3a"
   integrity sha512-EA7O4/5T00o+bQ0lDkXG29g2fZpZxHsOcq0O5+llfdZWQNvo4iC+QovjxV9StnIYduoMkoA/DpcEPpxkQzNz4w==
@@ -4711,7 +4711,7 @@ gridsome-plugin-brotli@^0.1.3:
     mkdirp "^0.5.1"
     worker-farm "^1.7.0"
 
-gridsome-plugin-manifest@^0.3.4:
+gridsome-plugin-manifest@0.3.4:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-manifest/-/gridsome-plugin-manifest-0.3.4.tgz#fe1323d5d3f6339a5d33ccde2949e410821d4e76"
   integrity sha512-E/GvTpJzO2nD0kaTxQcL2TY90Cn78KV7YOBGbPlf6OApQqxi4p5KWhFSbAURklHI6hkeEc7z3wHWRWMrpQ+/Qw==
@@ -4722,7 +4722,7 @@ gridsome-plugin-manifest@^0.3.4:
     rename "1.*"
     sharp "^0.23.2"
 
-gridsome-plugin-pwa@^0.0.17:
+gridsome-plugin-pwa@0.0.17:
   version "0.0.17"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-pwa/-/gridsome-plugin-pwa-0.0.17.tgz#f7eb9a4d06e07bf2f4d368898188f9a726ba3849"
   integrity sha512-SffPOcqfij/o/j2SRq0TLsgvXmJtQ4u9OvOG3IU3w3ogr0LHB08pnO8RJyaCNJ/H7rX6N3lXln6BCKqNc2z8YQ==
@@ -4732,7 +4732,7 @@ gridsome-plugin-pwa@^0.0.17:
     rename "^1.0.4"
     workbox-build "^5.1.2"
 
-gridsome-plugin-service-worker@^0.1.5:
+gridsome-plugin-service-worker@0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-service-worker/-/gridsome-plugin-service-worker-0.1.5.tgz#2dec64cc2ad1a430a7357713873cad596d7b6661"
   integrity sha512-9LyGcxqTFlIwxt33YwYYx2gbHliLFnum6W+iHpjef0pEWQtvE8oTdmaCXXaop2f1GHUXhjQ0/G5dKM2IeHThYA==
@@ -4757,12 +4757,12 @@ gridsome-plugin-service-worker@^0.1.5:
     workbox-strategies "5.*"
     workbox-window "5.*"
 
-gridsome-plugin-typescript@^0.4.0:
+gridsome-plugin-typescript@0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-typescript/-/gridsome-plugin-typescript-0.4.0.tgz#d6037275bfc1a92844d704c3f67b685478d6351d"
   integrity sha512-2tq2vPT/aqKmbSjlLeakRaaXrifgTIHzuwaHqapMx1PnZmviy9jdqoqbn533b4RcWYDbZ8gQ9gixjmT+RY5Ilg==
 
-gridsome@^0.7.17:
+gridsome@0.7.17:
   version "0.7.17"
   resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.17.tgz#c15fc04d26ce9ff635d956c23358498d87b672dd"
   integrity sha512-3Kooras77KNNO2lmRndrhlvJpH7UYZNO9BfKJmZXHAQrWXRHZKKBmdFHJISjfUfvArsiYiJjcVXXsTxEpNDHcw==
@@ -6768,7 +6768,7 @@ node-releases@^1.1.53:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.58.tgz#8ee20eef30fa60e52755fcc0942def5a734fe935"
   integrity sha512-NxBudgVKiRh/2aPWMgPR7bPTX0VPmGx5QBwCtdHitnqFE5/O8DeBXuIMH1nwNnw/aMo6AjOrpsHzfY3UbUJ7yg==
 
-node-sass@^4.14.1:
+node-sass@4.14.1:
   version "4.14.1"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.14.1.tgz#99c87ec2efb7047ed638fb4c9db7f3a42e2217b5"
   integrity sha512-sjCuOlvGyCJS40R8BscF5vhVlQjNN069NtQ1gSxyK1u9iqvn6tf7O1R4GNowVZfiZUCRt5MmMs1xd+4V/7Yr0g==
@@ -8000,7 +8000,7 @@ puppeteer-core@3.3.0:
     unbzip2-stream "^1.3.3"
     ws "^7.2.3"
 
-pwa-asset-generator@^3.1.1:
+pwa-asset-generator@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/pwa-asset-generator/-/pwa-asset-generator-3.1.1.tgz#76bc9942356afc0c399a9dc3e16e2ed3124d96d1"
   integrity sha512-eXx6jIPjTBRbQkI/8hJYc/sNu6iewUjMb71Zs07pJntxHxCMrBdR5OSIHBZgfxbBlhuU2QKUKGwSAbvvGukMRw==
@@ -8571,7 +8571,7 @@ sass-graph@2.2.5:
     scss-tokenizer "^0.2.3"
     yargs "^13.3.2"
 
-sass-loader@^8.0.2:
+sass-loader@8.0.2:
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-8.0.2.tgz#debecd8c3ce243c76454f2e8290482150380090d"
   integrity sha512-7o4dbSK8/Ol2KflEmSco4jTjQoV988bM82P9CZdmo9hR3RLnvNc0ufMNdMrB0caq38JQ/FgF4/7RcbcfKzxoFQ==
@@ -8755,6 +8755,21 @@ shallow-copy@~0.0.1:
   resolved "https://registry.yarnpkg.com/shallow-copy/-/shallow-copy-0.0.1.tgz#415f42702d73d810330292cc5ee86eae1a11a170"
   integrity sha1-QV9CcC1z2BAzApLMXuhurhoRoXA=
 
+sharp@0.25.3, sharp@^0.25.2:
+  version "0.25.3"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.25.3.tgz#fcb4f13fa9ce7d8a2d8273ebb40f375953cad937"
+  integrity sha512-qV3n30NaBEhAjBhFo+d8h5N4X3DHteFdwxXoWUiubk72G0VKT5fX50nlcawGYjPqfFV4Z2e/G9gDPeSGAdn/gg==
+  dependencies:
+    color "^3.1.2"
+    detect-libc "^1.0.3"
+    node-addon-api "^3.0.0"
+    npmlog "^4.1.2"
+    prebuild-install "^5.3.3"
+    semver "^7.3.2"
+    simple-get "^4.0.0"
+    tar "^6.0.2"
+    tunnel-agent "^0.6.0"
+
 sharp@^0.23.2:
   version "0.23.4"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.23.4.tgz#ca36067cb6ff7067fa6c77b01651cb9a890f8eb3"
@@ -8768,21 +8783,6 @@ sharp@^0.23.2:
     semver "^6.3.0"
     simple-get "^3.1.0"
     tar "^5.0.5"
-    tunnel-agent "^0.6.0"
-
-sharp@^0.25.0, sharp@^0.25.2:
-  version "0.25.3"
-  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.25.3.tgz#fcb4f13fa9ce7d8a2d8273ebb40f375953cad937"
-  integrity sha512-qV3n30NaBEhAjBhFo+d8h5N4X3DHteFdwxXoWUiubk72G0VKT5fX50nlcawGYjPqfFV4Z2e/G9gDPeSGAdn/gg==
-  dependencies:
-    color "^3.1.2"
-    detect-libc "^1.0.3"
-    node-addon-api "^3.0.0"
-    npmlog "^4.1.2"
-    prebuild-install "^5.3.3"
-    semver "^7.3.2"
-    simple-get "^4.0.0"
-    tar "^6.0.2"
     tunnel-agent "^0.6.0"
 
 shebang-command@^1.2.0:
@@ -9738,7 +9738,7 @@ trim-repeated@^1.0.0:
   dependencies:
     glob "^7.1.2"
 
-ts-loader@^7.0.5:
+ts-loader@7.0.5:
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-7.0.5.tgz#789338fb01cb5dc0a33c54e50558b34a73c9c4c5"
   integrity sha512-zXypEIT6k3oTc+OZNx/cqElrsbBtYqDknf48OZos0NQ3RTt045fBIU8RRSu+suObBzYB355aIPGOe/3kj9h7Ig==
@@ -9818,7 +9818,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.9.5:
+typescript@3.9.5:
   version "3.9.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
   integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
@@ -10155,7 +10155,7 @@ vue-meta@^2.2.2:
   dependencies:
     deepmerge "^4.2.2"
 
-vue-property-decorator@^8.4.2:
+vue-property-decorator@8.4.2:
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-8.4.2.tgz#016e17f259f73bc547e77a50ce282ba18db4ee41"
   integrity sha512-IqbARlvgPE2pzKfbecKxsu2yEH0Wv7hfHR6m4eZA3LTnNw9hveAX77vDfLFyTeMISS5N7Kucp/xRSHjcQ6bAfQ==
