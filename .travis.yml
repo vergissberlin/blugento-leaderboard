@@ -14,10 +14,13 @@ script:
   - yarn build
 
 before_deploy:
+  - pwd
   - ls -lisah ./dist/
 
 deploy:
   provider: surge
+  cleanup: false
+  edge: true
   project: ./dist/
   domain: https://blugentoleaderboard.surge.sh
   on:

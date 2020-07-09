@@ -26,10 +26,10 @@
 		"gridsome-plugin-typescript": "0.4.0",
 		"node-sass": "4.14.1",
 		"pwa-asset-generator": "3.1.1",
-		"sass-loader": "8.0.2",
+		"sass-loader": "9.0.2",
 		"sharp": "0.25.3",
-		"ts-loader": "7.0.5",
-		"typescript": "3.9.6",
-		"vue-property-decorator": "8.4.2"
+		"ts-loader": "8.0.0",
+		"typescript": "3.9.5",
+		"vue-property-decorator": "9.0.0"
 	}
 }

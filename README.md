@@ -36,3 +36,15 @@ One click to deploy on _free for testing_ hosting and build service of netlify:
 #### 2. Deploy
 
 1. Run the deploy task `gridsome deploy`.
+
+## Credits
+
+### Grafics
+
+* Blugento logo https://blugento.com
+* Whale on 404 page https://creazilla.com/nodes/9670-whale-clipart
+* Kosmonaut on 404 page https://de.vexels.com/png-svg/preview/152641/weltraum-kosmonauten-cartoon
+* Background in dark mode https://www.anupghosal.com/seven-mind-numbing-facts-about-cool-background-photos-cool-background-photos/11x11-blur-blue-gradient-cool-background-11x11-resolution/
+
+
+

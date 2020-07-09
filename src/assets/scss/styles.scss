@@ -2,18 +2,24 @@
 @import 'basics';
 @import 'utilities';
 
+// Animations
+@import './animations/shake';
+@import './animations/whale';
+
 // Components
 @import './components/app';
 @import './components/avatar';
 @import './components/avatar';
 @import './components/card';
 @import './components/dial';
+@import './components/display';
 @import './components/footer';
 @import './components/fullscreen';
 @import './components/leaderboard';
 @import './components/menu';
 @import './components/note';
 @import './components/progress';
+@import './components/rain';
 @import './components/statistics';
 @import './components/table';
 @import './components/user';
