@@ -29,7 +29,7 @@
 		"sass-loader": "10.1.1",
 		"sharp": "0.25.4",
 		"ts-loader": "8.0.18",
-		"typescript": "3.9.9",
+		"typescript": "3.9.10",
 		"vue-property-decorator": "9.1.2"
 	}
 }
