@@ -28,7 +28,7 @@
 		"pwa-asset-generator": "3.1.1",
 		"sass-loader": "10.1.1",
 		"sharp": "0.25.4",
-		"ts-loader": "8.0.18",
+		"ts-loader": "9.5.1",
 		"typescript": "3.9.9",
 		"vue-property-decorator": "9.1.2"
 	}
