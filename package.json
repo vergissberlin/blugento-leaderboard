@@ -25,7 +25,7 @@
 		"gridsome-plugin-service-worker": "0.2.6",
 		"gridsome-plugin-typescript": "0.4.0",
 		"node-sass": "4.14.1",
-		"pwa-asset-generator": "3.1.1",
+		"pwa-asset-generator": "6.3.1",
 		"sass-loader": "10.1.1",
 		"sharp": "0.25.4",
 		"ts-loader": "8.0.18",
